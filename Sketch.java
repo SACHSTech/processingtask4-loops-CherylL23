@@ -39,7 +39,7 @@ public class Sketch extends PApplet {
     //third quadrant
     for(int grayScale = 200; grayScale >=0; grayScale--) {
       stroke(grayScale);
-      line(grayScale, (float) (height / 2), grayScale, (height));
+      line(grayScale, (float) (height / 2), grayScale, (float) (height));
     } 
 
     //fourth quadrant
@@ -48,12 +48,12 @@ public class Sketch extends PApplet {
     translate(300, 300);
    for (int intPetals = 0; intPetals <8; intPetals++) {
      rotate(PI / 4);
-     ellipse(40, 0, 80, 30); 
+     ellipse((float) (width * 0.1), (float) (height * 0), (float) (width * 0.2), (float) (height * 0.075)); 
     }
 
     //middle of the flower
     stroke(0);
     fill(247, 247, 27); 
-    ellipse( 0, 0, 50, 50); 
+    ellipse( (float) (width * 0), (float) (height * 0), (float) (width * 0.125), (float) (height * 0.125)); 
   }
 }
